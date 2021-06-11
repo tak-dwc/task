@@ -4,8 +4,52 @@
   box-sizing: border-box;
   color: #6c6b6b;
 }
+main {
+  width: 960px;
+  margin: 50px auto;
+}
 
-.main-visual {
+.item-list {
+  margin-bottom: 50px;
+}
+
+.item {
+  padding: 20px;
+  list-style: none;
+}
+
+.item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.box-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #ffd700;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.box:first-child,
+.box:nth-child(5),
+.box:last-child {
+  background-color: #ff8c00;
+}
+/* 3の倍数 */
+.box:nth-child(3n) {
+  margin-right: 0;
+}
+/* 不明 */
+.box:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* .main-visual { 
   width: 960px;
   margin: 50px auto;
 }
@@ -32,7 +76,7 @@
   background-color: yellow;
 }
 
-.box:nth-child(1){
+.box:nth-child(1) {
   background-color: orange;
 }
 
@@ -49,11 +93,9 @@
 .box:nth-child(9) {
   background-color: orange;
 }
-.box:nth-child(4){
- margin: 40px 0;
+.box:nth-child(4) {
+  margin: 40px 0;
 }
-.box:nth-child(6){
- margin: 40px 0;
-}
-]
-
+.box:nth-child(6) {
+  margin: 40px 0;
+}*/
